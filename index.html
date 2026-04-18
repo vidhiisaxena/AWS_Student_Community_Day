@@ -164,8 +164,13 @@
 
         <section id="speakers" class="speakers-section">
           <h2 class="sub-heading">Speakers</h2>
+          <p class="schedule-helper">
+            Build your own itinerary. Sessions you save will stay highlighted on
+            this device.
+            <span id="saved-sessions-count">0 saved sessions</span>
+          </p>
           <div class="speakers-container">
-            <div class="speaker-card">
+            <div class="speaker-card" data-session-id="jen-looper-two-journeys-one-cloud">
               <div>
                 <img src="./assets/Speakers/Jen Looper.png" alt="speaker" />
                 <a
@@ -186,9 +191,12 @@
                 <p>Head of Academic Advocacy at AWS</p>
                 <h5>Topic:</h5>
                 <p>Two Journeys, One Cloud: Career Pathways</p>
+                <button class="schedule-button" type="button">
+                  Add to My Schedule
+                </button>
               </div>
             </div>
-            <div class="speaker-card">
+            <div class="speaker-card" data-session-id="aditi-sawhney-two-journeys-one-cloud">
               <div>
                 <img src="./assets/Speakers/aditi sawhny.jpg" alt="speaker" />
                 <a
@@ -209,9 +217,12 @@
                 <p>Senior Digital Marketing Manager at AWS</p>
                 <h5>Topic:</h5>
                 <p>Two Journeys, One Cloud: Career Pathways</p>
+                <button class="schedule-button" type="button">
+                  Add to My Schedule
+                </button>
               </div>
             </div>
-            <div class="speaker-card">
+            <div class="speaker-card" data-session-id="dipali-cicd-pipeline-with-aws">
               <div class="speaker-image">
                 <img src="./assets/Speakers/deepali.jpg" alt="speaker" />
                 <a
@@ -236,9 +247,12 @@
                 <p>
                   Empowering Future Innovators: Crafting CI/CD pipeline with AWS
                 </p>
+                <button class="schedule-button" type="button">
+                  Add to My Schedule
+                </button>
               </div>
             </div>
-            <div class="speaker-card">
+            <div class="speaker-card" data-session-id="varsha-verma-cloud-basics">
               <div class="speaker-image">
                 <img src="./assets/Speakers/VARSHA VERMA.jpeg" alt="speaker" />
                 <a
@@ -259,9 +273,12 @@
                 <p>Senior Cloud Ops Engineer at Accenture</p>
                 <h5>Topic:</h5>
                 <p>Unlocking and Mastering the Cloud Basics</p>
+                <button class="schedule-button" type="button">
+                  Add to My Schedule
+                </button>
               </div>
             </div>
-            <div class="speaker-card">
+            <div class="speaker-card" data-session-id="kristine-howard-generative-ai">
               <div class="speaker-image">
                 <img src="./assets/Speakers/kristine.jpg" alt="speaker" />
                 <a
@@ -284,10 +301,13 @@
                 </p>
                 <h5>Topic:</h5>
                 <p>Generative AI - Asking for a friend</p>
+                <button class="schedule-button" type="button">
+                  Add to My Schedule
+                </button>
               </div>
             </div>
 
-            <div class="speaker-card">
+            <div class="speaker-card" data-session-id="gargee-bhatnagar-aws-security-iam">
               <div class="speaker-image">
                 <img
                   src="./assets/Speakers/Gargee Bhatnagar.jpg"
@@ -311,9 +331,12 @@
                 <p>Consultant at Capgemini and AWS Community Builder</p>
                 <h5>Topic:</h5>
                 <p>AWS Security with Identity and Access Management</p>
+                <button class="schedule-button" type="button">
+                  Add to My Schedule
+                </button>
               </div>
             </div>
-            <div class="speaker-card">
+            <div class="speaker-card" data-session-id="rashmi-nambiar-professional-landscape">
               <div class="speaker-image">
                 <img src="./assets/Speakers/rashmi.jpg" alt="speaker" />
                 <a
@@ -334,9 +357,12 @@
                 <p>Principal Marketing Manager, AWS</p>
                 <h5>Topic:</h5>
                 <p>Making the right moves in a professional landscape</p>
+                <button class="schedule-button" type="button">
+                  Add to My Schedule
+                </button>
               </div>
             </div>
-            <div class="speaker-card">
+            <div class="speaker-card" data-session-id="payal-gupta-reinvent-recap">
               <div class="speaker-image">
                 <img src="./assets/Speakers/PAYAL GUPTA.JPG" alt="speaker" />
                 <a
@@ -357,9 +383,12 @@
                 <p>Cloud Engineer at Dremio</p>
                 <h5>Topic:</h5>
                 <p>Re-Invent recap</p>
+                <button class="schedule-button" type="button">
+                  Add to My Schedule
+                </button>
               </div>
             </div>
-            <div class="speaker-card">
+            <div class="speaker-card" data-session-id="rajani-aws-career-guide">
               <div class="speaker-image">
                 <img src="./assets/Speakers/Photo- Rajani.jpg" alt="speaker" />
                 <a
@@ -380,6 +409,9 @@
                 <p>AWS Community Builder</p>
                 <h5>Topic:</h5>
                 <p>Climbing the Cloud Ladder: Your AWS Career Guide</p>
+                <button class="schedule-button" type="button">
+                  Add to My Schedule
+                </button>
               </div>
             </div>
           </div>
@@ -1024,7 +1056,7 @@
     </div>
     <script src="countdown.js"></script>
     <script src="./preloader.js"></script>
-    <script src="./spearker_card.js"></script>
+    <script src="./speaker_card.js"></script>
 
     <script>
       const sponsorLogos = document.querySelectorAll(".sponsor-logo");
